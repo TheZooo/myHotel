@@ -1,0 +1,32 @@
+/*
+COLORS
+-------
+#AFC2D5 : Grayed Blue
+#CCDDD3 : Grayed Green
+#DFEFCA : Light Yellow Green
+#FFF9A5 : Bright Yellow
+#B48B7D : Light Dark Red
+*/
+div {
+    float:left;
+}
+.room {
+    width:200px;
+    height:50vh;
+    margin-top:10px;
+    margin-left:20px;
+    background-color:#DFEFCA;
+    border:2px solid #CCDDD3;
+    border-radius:10px;
+}
+#logo {
+    width:200px;
+    height:100px;
+    bottom:0;
+    left:0;
+    box-shadow:0 0 10px #AFC2D5;
+    position:fixed;
+    background-size:cover;
+    background-position-y: -10px;
+    background-image:url(myHLogo.jpeg);
+}
