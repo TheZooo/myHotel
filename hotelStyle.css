@@ -7,26 +7,55 @@ COLORS
 #FFF9A5 : Bright Yellow
 #B48B7D : Light Dark Red
 */
-div {
-    float:left;
+p {
+  margin-left:20px;
+  font-size:30px;
+  line-height:5px;
+}
+input {
+  margin-left:2px;
+}
+li {
+  text-shadow:0 0 10px #AFC2D5;
+  font-size:20px;
 }
 .room {
-    width:200px;
-    height:50vh;
+    width:250px;
     margin-top:10px;
     margin-left:20px;
     background-color:#DFEFCA;
     border:2px solid #CCDDD3;
     border-radius:10px;
+    float:left;
+    display:block;
+    overflow:auto;
+}
+.display {
+  width:250px;
+  min-height:100px;
+  display:block;
+  overflow:auto;
+  margin-top:5px;
+  border-radius:10px;
+  background-color:#FFF9A5;
+}
+.inOut {
+  width:50px;
+  margin-top:2px;
+}
+.remove {
+  margin-left:10px;
+  margin-bottom:5px;
+  visibility:hidden;
 }
 #logo {
     width:200px;
     height:100px;
     bottom:0;
     left:0;
-    box-shadow:0 0 10px #AFC2D5;
+    box-shadow:0 0 10px black;
     position:fixed;
     background-size:cover;
-    background-position-y: -10px;
+    background-position:0 -10px;
     background-image:url(myHLogo.jpeg);
 }
