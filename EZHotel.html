@@ -3,15 +3,21 @@
         <link rel="stylesheet" type="text/css" href="hotelStyle.css">
         <script type="text/javascript" src="hotelScript.js"></script>
     </head>
-    <body>
-        <div class="room">
+    <body onload="changeB()">
+      
+        <div id="spacer"></div>
+        
+        <div id="flexSeal">
+          
+          <div class="room" onclick="selOne()">
           <p>Room One</p>
           
           <input type="text" class="inIn">
-          <button onclick="add();selOne()">Add</button>
+          <button onclick="add()">Add</button>
           <input type="text" class="inOut">
-          <button onclick="rmv();selOne()">Remove #1-4</button>
-          <button onclick="lock();selOne()" class="clean">Close for Cleaning</button>
+          <button onclick="rmv()">Remove #1-4</button>
+          <button onclick="lock()" class="clean">Close for Cleaning</button>
+          <span></span>
           
           <div class="display">
             <h1>Closed For Cleaning</h1>
@@ -25,8 +31,117 @@
           </div>
         </div>
         
+        <div class="room">
+          <p>Room Two</p>
+          
+          <input type="text" class="inIn">
+          <button onclick="add();selTwo()">Add</button>
+          <input type="text" class="inOut">
+          <button onclick="rmv();selTwo()">Remove #1-4</button>
+          <button onclick="lock();selTwo()" class="clean">Close for Cleaning</button>
+          <span></span>
+          
+          <div class="display">
+            <h1>Closed For Cleaning</h1>
+            <ol class="chek">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <button onclick="rmvAll();selTwo()" class="remove">Remove All</button>
+          </div>
+        </div>
         
+        <div class="room">
+          <p>Room Three</p>
+          
+          <input type="text" class="inIn">
+          <button onclick="add();selTre()">Add</button>
+          <input type="text" class="inOut">
+          <button onclick="rmv();selTre()">Remove #1-4</button>
+          <button onclick="lock();selTre()" class="clean">Close for Cleaning</button>
+          <span></span>
+          
+          <div class="display">
+            <h1>Closed For Cleaning</h1>
+            <ol class="chek">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <button onclick="rmvAll();selTre()" class="remove">Remove All</button>
+          </div>
+        </div>
         
+        <div class="room">
+          <p>Room Four</p>
+          
+          <input type="text" class="inIn">
+          <button onclick="add();selFor()">Add</button>
+          <input type="text" class="inOut">
+          <button onclick="rmv();selFor()">Remove #1-4</button>
+          <button onclick="lock();selFor()" class="clean">Close for Cleaning</button>
+          <span></span>
+          
+          <div class="display">
+            <h1>Closed For Cleaning</h1>
+            <ol class="chek">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <button onclick="rmvAll();selFor()" class="remove">Remove All</button>
+          </div>
+        </div>
+        
+        <div class="room">
+          <p>Room Five</p>
+          
+          <input type="text" class="inIn">
+          <button onclick="add();selFiv()">Add</button>
+          <input type="text" class="inOut">
+          <button onclick="rmv();selFiv()">Remove #1-4</button>
+          <button onclick="lock();selFiv()" class="clean">Close for Cleaning</button>
+          <span></span>
+          
+          <div class="display">
+            <h1>Closed For Cleaning</h1>
+            <ol class="chek">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <button onclick="rmvAll();selFiv()" class="remove">Remove All</button>
+          </div>
+        </div>
+        
+        <div class="room">
+          <p>Room Six</p>
+          
+          <input type="text" class="inIn">
+          <button onclick="add();selSix()">Add</button>
+          <input type="text" class="inOut">
+          <button onclick="rmv();selSix()">Remove #1-4</button>
+          <button onclick="lock();selSix()" class="clean">Close for Cleaning</button>
+          <span></span>
+          
+          <div class="display">
+            <h1>Closed For Cleaning</h1>
+            <ol class="chek">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <button onclick="rmvAll();selSix()" class="remove">Remove All</button>
+          </div>
+        </div>
+          
+        </div>
         
         <div id="logo"></div>
     </body>
