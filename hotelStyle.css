@@ -7,6 +7,12 @@ COLORS
 #FFF9A5 : Bright Yellow
 #B48B7D : Light Dark Red
 */
+body {
+  background-size:cover;
+  background-repeat:no-repeat;
+  transition:background-image 3s;
+  background-image:url(https://stmed.net/sites/default/files/hotel-wallpapers-28644-2385182.jpg);
+}
 p {
   margin-left:20px;
   font-size:30px;
@@ -24,47 +30,63 @@ h1 {
   text-align:center;
   display:none;
 }
+span {
+  margin-left:3px;
+}
 .room {
-    width:250px;
-    margin-top:10px;
-    margin-left:20px;
-    background-color:#DFEFCA;
-    border:2px solid #CCDDD3;
-    border-radius:10px;
-    float:left;
-    display:block;
-    overflow:auto;
+  width:250px;
+  margin-top:20px;
+  margin-left:10px;
+  background-color:#DFEFCA;
+  box-shadow:0 0 10px black;
+  border:2px solid #CCDDD3;
+  border-radius:10px;
+  display:block;
+  overflow:auto; /*Div containing all buttons and lists*/
 }
 .display {
   width:250px;
   min-height:100px;
-  display:block;
+  display:inherit;
   overflow:auto;
   margin-top:5px;
   border-radius:10px;
-  background-color:#FFF9A5;
+  background-color:#FFF9A5; /*Div with the Lists*/
 }
 .inOut {
   width:50px;
-  margin-top:2px;
+  margin-top:2px; /*Input for Removing individuals*/
 }
 .clean {
   margin-top:2px;
-  margin-left:2px;
+  margin-left:2px; /*Clean Room Button*/
 }
 .remove {
   margin-left:10px;
   margin-bottom:5px;
-  visibility:hidden;
+  display:none; /*Remove All button*/
+}
+#flexSeal {
+  /*background-color:rgba(175, 194, 213, 0.5);*/
+  border-radius:10px;
+  display:flex;
+  flex-flow:row wrap; /*Container for keeping rooms together*/
+}
+#spacer {
+  width:99.4vw;
+  height:100px;
+  position:relative;
+  top:-8px;
+  background-color:rgba(175, 194, 213, 0.5); /*Space from top of the website*/
 }
 #logo {
     width:200px;
     height:100px;
-    bottom:0;
+    top:0;
     left:0;
     box-shadow:0 0 10px black;
     position:fixed;
     background-size:cover;
     background-position:0 -10px;
-    background-image:url(myHLogo.jpeg);
+    background-image:url(myHLogo.jpeg); /*I made this :)*/
 }
