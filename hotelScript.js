@@ -50,6 +50,7 @@ function add() {
   var z = document.getElementsByTagName('li')[2 + (max * selector)].innerHTML;
   var w = document.getElementsByTagName('li')[3 + (max * selector)].innerHTML;
   var ol = document.getElementsByClassName('chek')[selector];
+  var log = document.getElementById('log');
   var li;
   var d = new Date();
   var day = d.getDate() + ", ";
@@ -91,7 +92,11 @@ function add() {
     if (t === "") {}
     else if (count[selector] < max && count[selector] >= 0) {
       var elem = document.createElement('li');
+      var eLog = document.createElement('h2');
       var nTxt = document.createTextNode(t + " checked in at " + weDayFin + day + hour + ":" + min + " " + timeFin);
+      var txt = document.createTextNode("- " + t + " checked in at " + weDayFin + day + hour + ":" + min + " " + timeFin);
+      eLog.appendChild(txt);
+      log.appendChild(eLog);
       elem.appendChild(nTxt);
       ol.appendChild(elem);
       count[selector] = count[selector] + 1;
@@ -143,5 +148,15 @@ function rmvAll() {
     count[selector] = 0;
     document.getElementsByClassName('remove')[selector].style.display = "none";
     document.getElementsByClassName('display')[selector].style.backgroundColor = "#FFF9A5";
+  }
+}
+function logClear() {
+  var log = document.getElementById('log');
+  var h = document.getElementsByTagName('h2').length;
+  var hh = document.getElementsByTagName('h2')[0];
+  var i = 0;
+  for (i,h; i < h; i++) {
+    
+    log.removeChild(hh);
   }
 }
