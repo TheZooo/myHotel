@@ -10,10 +10,10 @@
         <div id="flexSeal">
           
           <div class="room">
-          <p>Room One</p>
+          <p class="roomN">Room One</p>
           
           <input type="text" class="inIn" onmouseover="selOne()">
-          <button onclick="add()" onmouseover="selOne()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selOne()">Add</button>
           <input type="text" class="inOut" onmouseover="selOne()">
           <button onclick="rmv()" class="RBttn" onmouseover="selOne()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selOne()">Close for Cleaning</button>
@@ -28,10 +28,10 @@
         </div>
         
         <div class="room">
-          <p>Room Two</p>
+          <p class="roomN">Room Two</p>
           
           <input type="text" class="inIn" onmouseover="selTwo()">
-          <button onclick="add()" onmouseover="selTwo()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selTwo()">Add</button>
           <input type="text" class="inOut" onmouseover="selTwo()">
           <button onclick="rmv()" class="RBttn" onmouseover="selTwo()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selTwo()">Close for Cleaning</button>
@@ -46,10 +46,10 @@
         </div>
         
         <div class="room">
-          <p>Room Three</p>
+          <p class="roomN">Room Three</p>
           
           <input type="text" class="inIn" onmouseover="selTre()">
-          <button onclick="add()" onmouseover="selTre()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selTre()">Add</button>
           <input type="text" class="inOut" onmouseover="selTre()">
           <button onclick="rmv()" class="RBttn" onmouseover="selTre()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selTre()">Close for Cleaning</button>
@@ -64,10 +64,10 @@
         </div>
         
         <div class="room">
-          <p>Room Four</p>
+          <p class="roomN">Room Four</p>
           
           <input type="text" class="inIn" onmouseover="selFor()">
-          <button onclick="add()" onmouseover="selFor()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selFor()">Add</button>
           <input type="text" class="inOut" onmouseover="selFor()">
           <button onclick="rmv()" class="RBttn" onmouseover="selFor()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selFor()">Close for Cleaning</button>
@@ -82,10 +82,10 @@
         </div>
         
         <div class="room">
-          <p>Room Five</p>
+          <p class="roomN">Room Five</p>
           
           <input type="text" class="inIn" onmouseover="selFiv()">
-          <button onclick="add()" onmouseover="selFiv()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selFiv()">Add</button>
           <input type="text" class="inOut" onmouseover="selFiv()">
           <button onclick="rmv()" class="RBttn" onmouseover="selFiv()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selFiv()">Close for Cleaning</button>
@@ -100,10 +100,10 @@
         </div>
         
         <div class="room">
-          <p>Room Six</p>
+          <p class="roomN">Room Six</p>
           
           <input type="text" class="inIn" onmouseover="selSix()">
-          <button onclick="add()" onmouseover="selSix()">Add</button>
+          <button onclick="add()" class="ABttn" onmouseover="selSix()">Add</button>
           <input type="text" class="inOut" onmouseover="selSix()">
           <button onclick="rmv()" class="RBttn" onmouseover="selSix()">Remove</button>
           <button onclick="lock()" class="clean" onmouseover="selSix()">Close for Cleaning</button>
@@ -115,8 +115,13 @@
             </ol>
             <button onclick="rmvAll()" class="remove" onmouseover="selSix()">Remove All</button>
           </div>
+          
         </div>
+          
         </div>
+        
+        <div id="holdLog">Log<button onclick="logClear()" id="XLog">Clear Log</button><div id="log"></div></div>
+        
         <div id="logo"></div>
     </body>
 </html>
