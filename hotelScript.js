@@ -32,7 +32,7 @@ function lock() {
   var div = document.getElementsByClassName('display')[selector];
   if (count[selector] === 0) {
     count[selector] = count[selector] - 1;
-    document.getElementsByTagName('h1')[selector].style.display = "block";
+    document.getElementsByTagName('h1')[selector].style.display = "inline-block";
     document.getElementsByClassName('clean')[selector].innerHTML = "Open from Cleaning";
     document.getElementsByClassName('display')[selector].style.backgroundColor = "#B48B7D";
   }
@@ -94,7 +94,7 @@ function add() {
       var elem = document.createElement('li');
       var eLog = document.createElement('h2');
       var nTxt = document.createTextNode(t + " checked in at " + weDayFin + day + hour + ":" + min + " " + timeFin);
-      var txt = document.createTextNode("- " + t + " checked in at " + weDayFin + day + hour + ":" + min + " " + timeFin);
+      var txt = document.createTextNode("- " + t + " checked in at " + weDayFin + day + hour + ":" + min + " " + timeFin + " in Room " + (selector + 1));
       eLog.appendChild(txt);
       log.appendChild(eLog);
       elem.appendChild(nTxt);
@@ -108,7 +108,7 @@ function add() {
     }
     ii = 0;
     if (count[selector] > 0) {
-      document.getElementsByClassName('remove')[selector].style.display = "block";
+      document.getElementsByClassName('remove')[selector].style.display = "inline-block";
     }
     if (count[selector] === 0) {
       document.getElementsByClassName('remove')[selector].style.display = "none";
@@ -123,7 +123,7 @@ function rmv() {
   var i = document.getElementsByClassName('inOut')[selector].value - 1;
   var ol = document.getElementsByClassName('chek')[selector];
   if (i < 0 || i > max) {}
-  else if (i > 0 && count[selector] != -1) {
+  else if (i >= 0 && count[selector] != -1) {
     var elem = document.createElement('li');
     var il = document.getElementsByTagName('li')[0 + (max * selector) + i];
     ol.removeChild(il);
@@ -151,12 +151,11 @@ function rmvAll() {
   }
 }
 function logClear() {
-  var log = document.getElementById('log');
   var h = document.getElementsByTagName('h2').length;
-  var hh = document.getElementsByTagName('h2')[0];
   var i = 0;
   for (i,h; i < h; i++) {
-    
+    var log = document.getElementById('log');
+    var hh = document.getElementsByTagName('h2')[0];
     log.removeChild(hh);
   }
 }
