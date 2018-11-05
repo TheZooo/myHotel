@@ -13,11 +13,6 @@ body {
   transition:background-image 3s;
   background-image:url(https://stmed.net/sites/default/files/hotel-wallpapers-28644-2385182.jpg);
 }
-p {
-  margin-left:20px;
-  font-size:30px;
-  line-height:5px;
-}
 input {
   margin-left:2px;
 }
@@ -30,8 +25,28 @@ h1 {
   text-align:center;
   display:none;
 }
+h2 {
+  font-size:20px;
+  line-height:20px;
+}
 span {
   margin-left:3px;
+}
+.ABttn {
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  color:black;
+  background-image:linear-gradient(to bottom right, white, #bfbfbf);
+  border:2px solid light gray;
+}
+.RBttn {
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  color:black;
+  background-image:linear-gradient(to bottom right, white, #bfbfbf);
+  border:2px solid light gray;
 }
 .room {
   width:250px;
@@ -58,13 +73,63 @@ span {
   margin-top:2px; /*Input for Removing individuals*/
 }
 .clean {
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  color:black;
+  background-image:linear-gradient(to bottom right, white, #bfbfbf);
+  border:2px solid light gray;
   margin-top:2px;
   margin-left:2px; /*Clean Room Button*/
 }
 .remove {
+  text-align:center;
+  text-decoration:none;
+  color:black;
+  background-image:linear-gradient(to bottom right, white, #bfbfbf);
+  border:2px solid light gray;
   margin-left:10px;
   margin-bottom:5px;
   display:none; /*Remove All button*/
+}
+.roomN {
+  margin-left:20px;
+  font-size:30px;
+  line-height:5px;
+}
+#holdLog {
+  width:50vw;
+  height:150px;
+  overflow:scroll;
+  font-size:30px;
+  text-indent:20px;
+  margin-top:20px;
+  margin-left:10px;
+  box-shadow:0 0 10px black;
+  border:2px solid #AFC2D5;
+  border-radius:10px;
+  background-color:rgba(175, 194, 213, 0.8); /*Log Box*/
+}
+#log {
+  width:48vw;
+  min-height:30px;
+  margin-top:6px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10px;
+  border:2px solid #AFC2D5;
+  background-color:rgba(180, 139, 125, 0.5); /*Log Box containing the people*/
+  
+}
+#XLog {
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  color:black;
+  background-image:linear-gradient(to bottom right, white, #bfbfbf);
+  border:2px solid light gray;
+  margin-left:10px;
 }
 #flexSeal {
   /*background-color:rgba(175, 194, 213, 0.5);*/
